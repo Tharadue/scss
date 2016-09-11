@@ -1001,45 +1001,54 @@ nav {
 
     .product-overview {
         float:left;
+        max-width: $containerwidth;
 
-            /* Style the list */
-            ul.tab {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-                border: 1px solid #ccc;
-                background-color: #f1f1f1;
-            }
+        .tabs {
+            position: relative;   
+            width: 948px;
+            min-height: 428px;
+            clear: both;
+            margin: 25px 0;
+        }
 
-            /* Float the list items side by side */
-            ul.tab li {float: left;}
+        .tab {
+            float: left;
+        }
+        
+        .tab label {
+            background: #eee; 
+            padding: 10px; 
+            border: 1px solid #ccc; 
+            margin-left: -1px; 
+            position: relative;
+            left: 1px; 
+        }
+        
+        .tab [type=radio] {
+            display: none;   
+        }
 
-            /* Style the links inside the list items */
-            ul.tab li a {
-                display: inline-block;
-                color: black;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-                transition: 0.3s;
-                font-size: 17px;
-            }
+        .tab-content {
+            position: absolute;
+            top: 28px;
+            left: 0;
+            background: white;
+            right: 0;
+            bottom: 0;
+            padding: 20px;
+            border: 1px solid #ccc; 
+        }
 
-            /* Change background color of links on hover */
-            ul.tab li a:hover {background-color: #ddd;}
-
-            /* Create an active/current tablink class */
-            ul.tab li a:focus, .active {background-color: #ccc;}
-
-            /* Style the tab content */
-            .tabcontent {
-                display: none;
-                padding: 6px 12px;
-                border: 1px solid #ccc;
-                border-top: none;
-            }
-
+        [type=radio]:checked ~ label {
+            background: white;
+            border-bottom: 1px solid white;
+            z-index: 2;
+        }
+        
+        [type=radio]:checked ~ label ~ .content {
+            z-index: 1;
+        }
+            
     }
 
 
