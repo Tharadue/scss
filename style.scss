@@ -1370,26 +1370,14 @@ nav {
 
 
     h1 {
-        font-family: $primaryFont;
-        text-transform: uppercase;
-        font-weight: 300;
         font-size: 20px;
         line-height: 10px;
-        color: #000;
         float:left;
-        padding-left:8px;
-        width:30px;
+        padding-left:20px;
     }
 
     h2 {
-        font-size: 15px;
-        text-transform: uppercase;
-        color: $mainRedColor;
-        font-weight: 300;
-        margin-bottom: 0px;
-        margin: auto;
-        float:left;
-        padding-left: 80px;
+        display: none;
     }
 
     p {
