@@ -1002,13 +1002,14 @@ nav {
     .product-overview {
         float:left;
         max-width: $containerwidth;
+        font-family: $primaryFont;
 
         .tabs {
             position: relative;   
-            width: 948px;
-            min-height: 428px;
             clear: both;
             margin: 25px 0;
+            width: 948px;
+            height: 428px;
         }
 
         .tab {
@@ -1016,38 +1017,45 @@ nav {
         }
         
         .tab label {
-            background: #eee; 
-            padding: 10px; 
-            border: 1px solid #ccc; 
-            margin-left: -1px; 
+            background: #fff; 
+            padding: 25px;
+            margin: 0 5px 0 -1px; 
             position: relative;
-            left: 1px; 
+            left: 1px;
+            height:50px;
+            font-size: 18px;
+            line-height: 0px;
+            text-transform: uppercase;
         }
         
         .tab [type=radio] {
             display: none;   
         }
 
-        .tab-content {
+        .content {
             position: absolute;
             top: 28px;
             left: 0;
             background: white;
             right: 0;
             bottom: 0;
-            padding: 20px;
-            border: 1px solid #ccc; 
+            margin-top: 50px;
         }
 
         [type=radio]:checked ~ label {
-            background: white;
-            border-bottom: 1px solid white;
+            background-color: #ee2d23;
+            -webkit-box-shadow: inset 0 1px #989898;
+            -moz-box-shadow: inset 0 1px #989898;
+            box-shadow: inset 0 1px #989898;
             z-index: 2;
+            text-transform: uppercase;
+	        color: #fff;
+	        text-shadow: 1px 1px rgba(78,78,77,.47);
         }
         
         [type=radio]:checked ~ label ~ .content {
             z-index: 1;
-        }
+            }
             
     }
 
