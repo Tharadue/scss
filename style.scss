@@ -1471,6 +1471,11 @@ nav {
 
 
 footer {
+    height:100%;
+
+    img {
+        height:20px;
+    }
 
     .flexbox {
         flex-wrap: wrap;
@@ -1478,7 +1483,7 @@ footer {
 
     @mixin footer-basic {
             text-align: center;
-            margin-top:47px;
+            margin-top:10px;
         }
 
     .footer-item {
@@ -1486,9 +1491,9 @@ footer {
     } 
 
         .divider {
-            border-right: solid 1px #e6e6eb;
-            height:18px;
-            padding-right:18px;
+            border-right: 0px;
+            padding-right:11px;
+            padding-left:11px;
         }
 
         .first {
@@ -1498,7 +1503,8 @@ footer {
         }
 
         .last {
-            padding-left:40px;
+            padding-left:0px;
+            width: 100%;
         }
 
  a {
