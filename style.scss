@@ -1398,13 +1398,9 @@ nav {
         }
 
     @mixin shoe-basic {
-            width: 24%;
-            height: 331px;
-            background-color: #fff;
-            border: solid 1px #e6e6eb;
-            text-align: center;
-            border-radius: 3px;
-            margin-bottom: 10px;
+            width: 48%;
+            height: 250px;
+            margin-bottom: 6px;
         }
 
     .shoe-item {
@@ -1416,34 +1412,26 @@ nav {
     }
 
     .product-logo {
-        height: 35px;
+        width:80%;
         margin-top:12px;
     }
 
     .product-picture {
         max-width:87%;
-        height:160px;
-    }
-
-    .product-divider {
-        border-bottom: 1px #e1e0df solid;
-        width: 87%;
-        margin: auto;
-        margin-top: 3px;
+        height:100px;
     }
 
     .product-name {
-        font-size: 17px;
-        color:#515151;
-        width: 68%;
+        font-size: 12px;
+        width: 95%;
         margin: auto;
-        margin-top:24px;
-        margin-bottom: 7px;
+        margin-top:14px;
+        margin-bottom: 5px;
     }
 
     .product-button {
         margin: auto;
-        width: 76%;
+        width: 95%;
         height: 27px;
         -webkit-border-radius: 13px 14px 14px 13px/14px 14px 13px 13px;
         -moz-border-radius: 13px 14px 14px 13px/14px 14px 13px 13px;
