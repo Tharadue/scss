@@ -1007,7 +1007,6 @@ nav {
         .tabs {
             position: relative;   
             clear: both;
-            margin: 25px 0;
             width: 948px;
             height: 428px;
         }
@@ -1039,7 +1038,8 @@ nav {
             background: white;
             right: 0;
             bottom: 0;
-            margin-top: 50px;
+            margin-top: 23px;
+            padding:40px 25px 40px 25px;
         }
 
         [type=radio]:checked ~ label {
@@ -1051,6 +1051,7 @@ nav {
             text-transform: uppercase;
 	        color: #fff;
 	        text-shadow: 1px 1px rgba(78,78,77,.47);
+            font-weight: 300;
         }
         
         [type=radio]:checked ~ label ~ .content {
