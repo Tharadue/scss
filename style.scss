@@ -532,7 +532,7 @@ nav {
     }
 
         .shoe-brands {
-            margin:0 40px 0 25px;
+            margin:20px 40px 0 25px;
             font-size: 18px;
             text-transform: uppercase;
             float:left;
@@ -550,7 +550,6 @@ nav {
                 font-size: 18px;
                 text-transform: uppercase;
                 color:#000;
-                margin-bottom:10px;
             }
 
             table .left {
@@ -617,6 +616,10 @@ nav {
                 background-position: center top;
             }
 
+            img {
+                margin-top:-30px;
+            }
+
         h1 {
             font-family: $primaryFont;
             text-transform: uppercase;
@@ -629,7 +632,7 @@ nav {
         h2 {
             font-size: 14px;
             text-transform: uppercase;
-            margin:-6px 0 -10px 0;
+            margin:-6px 0 0px 0;
             color: $mainRedColor;
             font-weight: 400;
         }
@@ -645,6 +648,16 @@ nav {
         .color-price-box {
             float:left;
             width:200px;
+            margin-top:55px;
+
+            h1 {
+                color: #000;
+                font-size: 18px;
+                line-height: 18px;
+                margin-top:0px;
+                text-transform: uppercase;
+                font-family: myriad pro;
+            }
 
             .color-box {
                 width:200px;
@@ -748,7 +761,20 @@ nav {
             }
 
             .price-box {
+                margin-top: 30px;
 
+
+                .base {
+                    width: 200px;
+                    height: 6px;
+                    -webkit-border-radius: 4px 3px 3px 4px/3px;
+                    -moz-border-radius: 4px 3px 3px 4px/3px;
+                    border-radius: 4px 3px 3px 4px/3px;
+                    background-color: rgba(255,255,255,0);
+                    -webkit-box-shadow: 0 1px rgba(255,255,255,.3), inset 1px 1px 4px rgba(0,0,0,.3);
+                    -moz-box-shadow: 0 1px rgba(255,255,255,.3), inset 1px 1px 4px rgba(0,0,0,.3);
+                    box-shadow: 0 1px rgba(255,255,255,.3), inset 1px 1px 4px rgba(0,0,0,.3);
+                }
             }
         }
   }
