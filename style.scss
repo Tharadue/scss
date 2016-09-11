@@ -71,7 +71,7 @@ body {
     max-width: $containerwidth;
     margin:auto;
     margin-bottom:20px;
-    min-height:800px;
+    position: relative;
 }
 
 header {
@@ -510,7 +510,6 @@ nav {
     height:263px;
     max-width: 950px;
     margin: auto;
-    position: relative;
 
     .header-font {
         background-color: #2a2929;
@@ -757,7 +756,6 @@ nav {
 .shoe-detail {
     height: 100%;
     margin-bottom:50px;
-    position: relative;
 
     h1 {
         color:#000;
@@ -1008,6 +1006,7 @@ footer {
     height: 145px;
     min-width:100%;
     position: relative;
+    margin-top:20px;
     bottom: -8px;
 
     .flexbox {
