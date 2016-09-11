@@ -1218,7 +1218,8 @@ h3 {
     }
 }
 
-.functions {    /*The function box with shopping cart, login, register */
+.functions {  
+   width:98%;  /*The function box with shopping cart, login, register */
 
     a {
         font-size: 14px;
@@ -1329,6 +1330,8 @@ nav {
     height:200px;
   }
 
+
+/*SHOE TYPES - WOMAN, MAN, KIDS - NO PICTURES */
 .shoe-type {
     margin-top: -35px;
     margin-bottom:0px;
@@ -1468,23 +1471,9 @@ nav {
 
 
 footer {
-    background-color: $mainRedColor;
-    height: 145px;
-    min-width:100%;
-    position: relative;
-    margin-top:20px;
-    bottom: -8px;
 
     .flexbox {
-        display: -webkit-flex;
-        display: flex;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-justify-content: space-around;
-        justify-content: space-around;
-        font-weight: 300;
-        width:100%;
-        margin:auto;
+        flex-wrap: wrap;
         }
 
     @mixin footer-basic {
@@ -1503,7 +1492,9 @@ footer {
         }
 
         .first {
-            padding-right: 40px;
+            padding-right: 0px;
+            text-align: center;
+            width:100%;
         }
 
         .last {
@@ -1512,8 +1503,6 @@ footer {
 
  a {
      font-size: 11px;
-     color:#fff;
-     text-decoration: none;
  }
 
 }
