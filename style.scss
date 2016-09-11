@@ -770,7 +770,7 @@ nav {
     }
 
 
-/* GALLERY ON DETAILPAGE */
+/* GALLERY ON DETAILPAGE, LEFT PART */
     .gallery {
         width:470px;
         float: left;
@@ -833,6 +833,7 @@ nav {
                 }
     }
 
+/* RIGHT PART OF DETAIL PAGE */
     .shop {
         float: right;
         
@@ -845,6 +846,7 @@ nav {
             }
         }
 
+/*PRICE BOX TOP PART, WITH THE PRICE BEFORE REDUCED + REVIEWS BOX */
         .price-box-top {
             width: 430px;
             height:45px;
@@ -870,6 +872,7 @@ nav {
             }
         }
 
+/*PRICE BOX, BOTTOM PART, WITH BIG PRICE */
         .price-box-bottom {
 
             .price {
@@ -888,18 +891,20 @@ nav {
             }
         }
         
+/*BOX WITH SAVING, THE PIGGYBANK ICON*/
         .savings {
             float: right;
             vertical-align: bottom;
             }
 
-            .description {
-                max-width:440px;
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: 12px;
-                color:#929191;
-                margin:18px 0 25px 0;
-                text-align: right;
+/*DESCRIPTION BOX  + SEPERATION LINE*/
+        .description {
+            max-width:440px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            color:#929191;
+            margin:18px 0 25px 0;
+            text-align: right;
 
                 .seps {
                     width: 441px;
@@ -912,9 +917,15 @@ nav {
                 }
             }
 
+/*PLACE ORDER BOX + FORM AND FORM BUTTON */
             .place-order {
                 text-align: right;
                 height: 170px;
+
+                .free-ship {
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 16px;
+                }
 
                 form {
                     float: right;
@@ -965,6 +976,8 @@ nav {
 
                 .button {
                     @include button;
+                    width: 204px;
+                    text-transform: none;
                     }
                     
                 .button:hover {
@@ -972,8 +985,9 @@ nav {
                     }
             }
         
+/*SHARE THIS BOX */
         .share-this {
-            margin-top: 0;
+            margin-top: 20px;
             text-align: right;
             float: right;
             font-family: Arial, Helvetica, sans-serif;
