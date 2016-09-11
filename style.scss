@@ -1328,34 +1328,20 @@ nav {
 
 .shoe-type {
     margin-top: -15px;
-    height: 345px;
     margin-bottom:20px;
 
     .flexbox{
-        display: -webkit-flex;
-        display: flex;
-         -webkit-align-items: center;
-          -webkit-justify-content: space-between;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 18px;
-        width: 100%;
-        height: 345px;
-        background-color:$mainBackground;
+        flex-wrap: wrap;
+        font-size: 12px;
         }
 
     @mixin shoe-type-basic {
-            width: 32%;
-            height: 100%;
-            background-color: #fff;
-            border: solid 1px #e6e6eb;
-            text-align: center;
-            border-radius: 3px;
+            width: 100%;
+            height:80px;
         }
 
     .shoe-type-item {
         @include shoe-type-basic;
-        margin-right:11px;
     }      
     
     .shoe-type-item-last {
@@ -1364,34 +1350,16 @@ nav {
 
     @mixin picture-button {
         border-radius: 50%;
-        width: 55%;
-        padding-bottom: 55%;
-        margin: auto;
+        width: 25%;
+        padding-bottom: 25%;
+        text-align: left;
     }
-
-        .button-woman {
-            @include picture-button;
-            background-image: url(/pictures/woman-shoe-picture.png);
-            background-position: center bottom;
-        }
-
-         .button-man {
-            @include picture-button;
-            background-image: url(/pictures/man-shoe-picture.png);
-            background-position: center;
-        }
-
-         .button-kids {
-            @include picture-button;
-            background-image: url(/pictures/kids-shoe-picture.png);
-            background-position: center top;
-        }
 
     h1 {
         font-family: $primaryFont;
         text-transform: uppercase;
         font-weight: 300;
-        font-size: 40px;
+        font-size: 20px;
         color: #000;
         margin:21px 0 7px 0;
     }
