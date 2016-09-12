@@ -91,8 +91,7 @@ header {
     background-color:$mainBackground;
     padding-right: 6px;
     width: 320px;
-    height: 36px;
-    padding-top: 11px;
+    padding:20px 0 17px 0;
     font-weight: 300;
 
     .icon1 {
@@ -118,6 +117,11 @@ header {
         text-decoration: underline;
     }
 
+    
+        a:hover {
+            color: $mainRedColor;
+        }
+
     .flexbox{
         display: -webkit-flex;
         display: flex;
@@ -138,6 +142,9 @@ header {
 
     .function-item {
         
+        img {
+            vertical-align: baseline;
+        }
 
     }
         .item1 {
@@ -216,27 +223,29 @@ nav {
     }
 
     .nav-item-first {
-        padding: 0 22px 0 12px;
+        padding-left:5px;
     }
 
     .nav-item {
         border-left: 1px solid #e0e0e0;
-        padding:0 22px 0 22px;
+        margin-left: -25px;
+        padding-left: 22px;
+        
     }
 
     .nav-item-last {
         border-left: 1px solid #e0e0e0;
-        padding:0 0 0 22px;
+        margin-left: -25px;
+        padding-left: 22px;
     }
 
     .nav-item-search {
-        padding: 0 5px 0 30px;
         width: 21%;
     }
 }
 
 .search {
-	height: 23px;
+	height: 25px;
 	border-radius:(14px);
 	background-color: #f5f5f5;
 	box-shadow:(0 1px #fff, inset 0 1px 3px rgba(0,0,0,.1));
@@ -249,6 +258,7 @@ nav {
 
         img {
             padding-right: 8px;
+            margin-top: -5px;
         }
     }
 }
@@ -360,6 +370,7 @@ nav {
         width: 55%;
         padding-bottom: 55%;
         margin: auto;
+        border:1px solid #ccc;
     }
 
         .button-woman {
@@ -380,6 +391,12 @@ nav {
             background-position: center top;
         }
 
+        
+           .shoe-type-item:hover, .shoe-type-item-last:hover{
+               box-shadow: 0 0 0 2px $mainRedColor;
+               }
+
+
     h1 {
         font-family: $primaryFont;
         text-transform: uppercase;
@@ -392,22 +409,31 @@ nav {
     h2 {
         font-size: 25px;
         text-transform: uppercase;
-        margin:-6px 0 -20px 0;
         color: $mainRedColor;
         font-weight: 300;
+        margin-top: -5px;
     }
 
     p {
         font-size: 15px;
         font-weight: 300;
         text-transform: uppercase;
-
+        margin-top: -10px;
     }
 }
 
 .product-grid-front {
     background-color:$mainBackground;
     margin-bottom: 20px;
+
+    a {
+        color:#2a2929;
+        font-size: 17px;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
 
         .flexbox{
         display: -webkit-flex;
@@ -441,6 +467,11 @@ nav {
             @include shoe-basic;
     }
 
+    
+    .shoe-item:hover {
+        box-shadow: 0 0 0 2px $mainRedColor
+    }
+
     .product-logo {
         height: 35px;
         margin-top:12px;
@@ -471,14 +502,16 @@ nav {
         margin: auto;
         width: 76%;
         height: 27px;
-        -webkit-border-radius: 13px 14px 14px 13px/14px 14px 13px 13px;
-        -moz-border-radius: 13px 14px 14px 13px/14px 14px 13px 13px;
         border-radius: 13px 14px 14px 13px/14px 14px 13px 13px;
-        background: rgb(248,80,50); /* Old browsers */
-        background: -moz-linear-gradient(-45deg,  rgba(248,80,50,1) 0%, rgba(248,80,50,1) 28%, rgba(246,41,12,1) 64%, rgba(240,47,23,1) 100%, rgba(231,56,39,1) 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(-45deg,  rgba(248,80,50,1) 0%,rgba(248,80,50,1) 28%,rgba(246,41,12,1) 64%,rgba(240,47,23,1) 100%,rgba(231,56,39,1) 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(135deg,  rgba(248,80,50,1) 0%,rgba(248,80,50,1) 28%,rgba(246,41,12,1) 64%,rgba(240,47,23,1) 100%,rgba(231,56,39,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+        background: #f16f5c; /* Old browsers */
+        background: -moz-linear-gradient(top,  #f16f5c 1%, #f85032 22%, #f6290c 42%, #f02f17 71%, #e73827 100%); 
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  #f16f5c 1%,#f85032 22%,#f6290c 42%,#f02f17 71%,#e73827 100%); 
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  #f16f5c 1%,#f85032 22%,#f6290c 42%,#f02f17 71%,#e73827 100%);
+         /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f16f5c', endColorstr='#e73827',GradientType=0 ); 
+        /* IE6-9 */
 
         table {
            color: #fff;
@@ -882,13 +915,13 @@ nav {
 
                     .thumbnail:hover {
                     transition: background-color .3s,color .15s,box-shadow .3s,opacity 0.3s;
-                    border: 5px solid #e82e33;
+                   box-shadow: 0 0 0 5px $mainRedColor;
                      cursor: pointer;
                      cursor: hand;
                     }
             
                 .thumbnail-active {
-                    border: 5px solid #e82e33;
+                    box-shadow: 0 0 0 2px $mainRedColor;
                     border-radius: 0px;
                     }
                 }
