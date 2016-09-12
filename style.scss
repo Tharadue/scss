@@ -1191,7 +1191,7 @@ footer {
         -webkit-justify-content: space-around;
         justify-content: space-around;
         font-weight: 300;
-        width:100%;
+        max-width:960px;
         margin:auto;
         }
 
@@ -1230,7 +1230,7 @@ footer {
  }
 }
 
-/* FONT TYPES */
+/* FONT TYPES - not all of them is used, but if there will be main header etc, put them here */
 
 h1 {
     color: red;
