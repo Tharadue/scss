@@ -330,7 +330,7 @@ nav {
 /*THREE-BOX SELECTION ON FRONTPAGE, WOMAN, MAN, KIDS */
 
 .shoe-type {
-    margin-top: 45px;
+    margin-top: 10px;
     height: 345px;
     margin-bottom:20px;
 
@@ -348,7 +348,7 @@ nav {
         }
 
     @mixin shoe-type-basic {
-            width: 32%;
+            width: 32.3%;
             height: 100%;
             background-color: #fff;
             border: solid 1px #e6e6eb;
@@ -358,7 +358,7 @@ nav {
 
     .shoe-type-item {
         @include shoe-type-basic;
-        margin-right:11px;
+
     }      
     
     .shoe-type-item-last {
@@ -392,8 +392,8 @@ nav {
         }
 
         
-           .shoe-type-item:hover, .shoe-type-item-last:hover{
-               box-shadow: 0 0 0 2px $mainRedColor;
+           .button-kids:hover, .button-man:hover, .button-woman:hover{
+               box-shadow: 0 0 0 2px #f3f2f2;
                }
 
 
@@ -425,6 +425,24 @@ nav {
 .product-grid-front {
     background-color:$mainBackground;
     margin-bottom: 20px;
+
+    table {
+
+        .right {
+            text-align: right;
+            
+
+            a {
+                font-style: italic;
+                font-size: 14px;
+                color:#626162;
+                text-transform: lowercase;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
 
     a {
         color:#2a2929;
@@ -512,10 +530,6 @@ nav {
          /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f16f5c', endColorstr='#e73827',GradientType=0 ); 
         /* IE6-9 */
-
-        .product-button:hover {
-            background-color: #2a2929;
-        }
 
         table {
            color: #fff;
