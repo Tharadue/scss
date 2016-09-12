@@ -513,6 +513,10 @@ nav {
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f16f5c', endColorstr='#e73827',GradientType=0 ); 
         /* IE6-9 */
 
+        .product-button:hover {
+            background-color: #2a2929;
+        }
+
         table {
            color: #fff;
            height: 27px;
